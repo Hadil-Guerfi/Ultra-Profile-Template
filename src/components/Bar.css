@@ -1,0 +1,115 @@
+
+
+@keyframes jsBuble {
+
+    from {
+        left:0;
+        }
+        
+        to {
+        
+        left:calc(50% - 33px);
+        
+        }
+}
+
+
+@keyframes javaBuble {
+
+    from {
+        left:0;
+        }
+        
+        to {
+        
+        left:calc(40% - 33px);
+        
+        }
+}
+
+
+
+@keyframes pythonBuble {
+
+    from {
+        left:0;
+        }
+        
+        to {
+        
+        left:calc(80% - 33px);
+        
+        }
+}
+
+@keyframes phpBuble {
+
+    from {
+        left:0;
+        }
+        
+        to {
+        
+        left:calc(30% - 33px);
+        
+        }
+}
+
+
+/* --------------- */
+
+
+
+@keyframes jsFill {
+
+    from {
+        width:0;
+        }
+        
+        to {
+        
+        width:50%;
+        
+        }
+}
+
+@keyframes javaFill {
+
+    from {
+        width:0;
+        }
+        
+        to {
+        
+        width:40%;
+        
+        }
+}
+
+@keyframes pythonFill {
+
+    from {
+        width:0;
+        }
+        
+        to {
+        
+        width:80%;
+        
+        }
+}
+
+@keyframes phpFill {
+
+    from {
+        width:0;
+        }
+        
+        to {
+        
+        width:30%
+        
+        }
+}
+
+

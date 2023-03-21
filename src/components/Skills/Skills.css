@@ -1,0 +1,119 @@
+.skills{
+    margin-bottom: 100px;
+}
+
+.skills .skills-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 20px;
+    row-gap: 50px;
+    flex-wrap: wrap;
+}
+
+
+/* START TECH SKILLS */
+.tech-skills{
+    /* width: 50%; */
+    /* flex-grow: 1; */
+    width: fit-content;
+    padding-left: 20px;
+
+}
+
+
+.tech-skills .tech-title{
+    text-align: center;
+    font-size: 32px;
+    color: #fc886e;
+    padding-top: 15px;
+    padding-bottom: 45px;
+    font-weight: bold;
+}
+
+.bar-container{
+    position: relative;
+    width: 450px;
+}
+
+.tech-skill .title{
+    margin-bottom: 15px;
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.bar-container .bar{
+    position: relative;
+    background-color:#d4e2f0ad ;
+    height: 12px;
+    border-radius: 15px;
+    margin-bottom: 38px;
+}
+
+.bar-container .buble{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background: linear-gradient(to left, var(--main),#fff );
+    border: 1px solid var(--blue);
+    width: 33px;
+    border-radius: 15px;
+    height: 20px;
+    top: 50%;
+    transform: translate(0px,-50%);
+    left: 0;
+    font-size: 13px;
+    font-weight: 600;
+
+}
+
+.bar-container .fillElt{
+    border: 1px solid var(--blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background-color: var(--main);
+    border-radius: 15px;
+    height: 100%;
+    top: 50%;
+    transform: translate(0px,-50%);
+    left: 0;
+    width: 0%;
+}
+
+
+@media (max-width: 768px) {
+ 
+    .skills .skills-container {
+        row-gap: 25px;
+    }
+    
+
+    .bar-container{
+        position: relative;
+        width: 320px;
+    }
+
+    .tech-skills .tech-title{
+        font-size: 28px;
+    }
+
+}
+
+@media (max-width: 992px) {
+
+  
+}
+
+@media (max-width: 1200px) {
+
+}
+
+
+/* END TECH SKILLS */
+
+
+

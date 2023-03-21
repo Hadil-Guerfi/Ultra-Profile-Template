@@ -1,0 +1,69 @@
+
+.resume{
+    height:600px;
+    background-image: url("../../images/creative/about-bg.jpg");
+    background-repeat: no-repeat;
+    background-position:  center;
+    background-attachment: fixed;
+    position: relative;
+}
+
+ .heading{
+    text-align: none;
+    font-size: 56px;
+    font-weight: 700;
+}
+
+
+
+.resume .container{
+    display: flex;
+    width: fit-content;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    right: 5%;
+}
+
+.resume .heading{
+    text-align: center !important;
+}
+
+.resume .container .text-resume{
+    max-width: 500px;
+}
+
+.resume  .text-resume :first-child{
+    font-size: 32px;
+    color: #fc886e;
+    font-weight: bold;
+    font-size: 30px;
+    padding-bottom: 20px;
+
+}
+
+.resume  .text-resume :last-child{
+    font-size: 18px;
+    line-height: 38px;
+}
+
+
+
+
+
+@media (max-width:768px) {
+
+    .resume  .text-resume :first-child{
+        font-size: 28px;
+    }
+
+    .resume{
+        height:100vh;
+
+    }
+
+    .heading{
+        font-size: 45px;
+    }
+
+}

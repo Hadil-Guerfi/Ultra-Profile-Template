@@ -1,0 +1,160 @@
+
+.home{
+    height: calc(100vh - 74px);
+    background-image:url(../../images/Home/home-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.home .container{
+    position: relative;
+    top: 45%;
+    text-align:center;
+    max-width: 800px;
+}
+
+.home .container :first-child{
+    position: relative;
+    font-size: 65px;
+    font-weight: bold;
+    color:rgb(94, 94, 94);
+    margin-bottom: 25px;
+    animation: toRight 1.5s forwards ;
+    opacity: 0;
+}
+
+@keyframes toRight {
+    
+    0%,30%{
+        display: none;
+        opacity: 0;
+        left:-100px
+    }
+
+    100%{
+        display: block;
+        opacity:1;
+        left: 0px;
+    }
+}
+
+.home .container :nth-child(2){
+    position: relative;
+    font-size: 35px;
+    font-weight: bold;
+    color:var(--main);
+    margin-bottom: 25px;
+    animation: toRight 1.5s 0.1s forwards ;
+    opacity: 0;
+}
+
+.home .container :nth-child(3){
+    position: relative;
+    font-size: 20px;
+    margin-bottom: 25px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    opacity: 0;
+    animation: toRight 1.5s 0.2s forwards ;
+    line-height: 35px;
+}
+
+.home .container :last-child{
+    position: relative;
+    font-size:22px;
+    padding: 10px 15px;
+    font-weight: 600;
+    border: none;
+    background-color:var(--main) ;
+    color: white;
+    animation: btnAnim 1.5s 0.3s forwards ;
+    transition: 0.5s;  
+    opacity: 0;
+}
+
+@keyframes btnAnim {
+    
+    0%,30%{
+        display: none;
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    75%{
+        display: block;
+        opacity:1;
+        transform: translateX(50px);
+
+    }
+
+    100%{
+        display: block;
+        opacity:1;
+        transform: translateX(0);
+    }
+
+}
+
+.home .container :last-child:hover{
+    background-color:white ;
+    color:var(--main);
+    cursor: pointer;
+}
+
+
+
+
+
+  @media (max-width: 992px) {
+    .home .container{
+        top: 40%;
+    }
+
+    .home .container :first-child{
+        font-size: 52px;
+    }
+
+    .home .container :nth-child(2){
+        font-size: 32px; 
+    }
+    
+    .home .container :nth-child(3){
+        font-size: 18px; 
+    }
+
+
+    .home .container :nth-child(3){
+        margin-bottom: 35px;
+    }
+    
+
+  }
+  
+  @media (max-width: 768px) {
+
+  .home .container{
+    top: 30%;
+    }
+
+    .home .container :first-child{
+        font-size: 45px;
+        color:var(--main);
+
+    }
+
+    .home .container :nth-child(2){
+        font-size: 28px; 
+        color: white;
+        font-weight: bold;
+    }
+    
+    .home .container :nth-child(3){
+        font-size: 18px; 
+        margin-bottom: 38px;
+
+    }
+
+    }
+    
+  

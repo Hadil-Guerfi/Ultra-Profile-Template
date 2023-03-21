@@ -1,0 +1,115 @@
+
+/* START PROF SKILLS */
+
+.prof-skills{
+    position: relative;
+    width: fit-content;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 40px;
+    row-gap: 50px;
+    text-align: center;
+}
+
+.prof-skill{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    
+ }
+
+.prof .prof-title{
+    text-align: center;
+    font-size: 32px;
+    color: #fc886e;
+    padding-top: 15px;
+    padding-bottom: 25px;
+    font-weight: bold;
+}
+
+.prof-skill .title{
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px;
+    min-width: 200px;
+}
+
+.prof-skill  .cercle-container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;   
+    /* animation: animCercle 0.8s both; */
+}
+
+
+.before-div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 85%;
+    height: 85%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    background-color: var(--blue);
+    color:#ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    font-size: 17px;
+    font-weight: 600;
+
+}
+
+
+.bar-container .fillEltCercle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background-color: var(--main);
+    border-radius: 50%;
+
+}
+
+
+
+@media (max-width: 768px) {
+
+
+    .prof-skill .cercle-container {
+        width: 100px;
+        height: 100px;
+    }
+
+
+    .prof .prof-title{
+        font-size: 28px;
+    }
+
+    .prof-skill .title {
+        font-size: 20px;
+    }
+
+    .prof-skills{
+        column-gap: 20px;
+    }
+    .prof-skill .title {
+        min-width:fit-content;
+    }
+
+    .prof .prof-title{
+        padding-bottom: 35px;
+    }
+
+}
+
+
